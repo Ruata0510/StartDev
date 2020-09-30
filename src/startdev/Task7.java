@@ -20,11 +20,12 @@ class Task7 {
         String string = sc.nextLine();
         System.out.println("Введите букву: ");
         String letter = sc.nextLine();
+        char[] chLetter = letter.toCharArray();
+        char[] chString = string.toCharArray();
         int n = 0;
-        if(letter.length() != 0){
-                n++;
-                for (int i = 0; i < string.length(); i++) {
-                    if(string.charAt(i) == ' '){
+        if(chLetter.length != 0){
+                for (int i = 0; i < chString.length; i++) {
+                    if(chLetter[0] == chString[i]){
                         n++;
                     }
                 }
